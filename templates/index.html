@@ -1,0 +1,18 @@
+{% include 'header_and_footer/header.html' %}
+<div class="container">
+    <h1>Hello, world!</h1>
+    <h2>Barbers</h2>
+    <ul>
+        {% for barber in barbers %}
+            <li>{{ barber.name }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Services</h2>
+    <ul>
+        {% for service in services %}
+            <li>{{ service.name }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% include 'header_and_footer/footer.html' %}

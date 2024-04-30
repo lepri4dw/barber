@@ -1,0 +1,11 @@
+{% include 'header_and_footer/header.html' %}
+<div class="container">
+    <h1>Application Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+{% include 'header_and_footer/footer.html' %}
