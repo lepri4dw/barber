@@ -1,0 +1,25 @@
+.cover-image {
+    background-image: url('../../media/img.png');
+    background-size: cover;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+body {
+    background-color: #ccc;
+}

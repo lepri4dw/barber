@@ -28,4 +28,4 @@ class Application(models.Model):
     phone_number = models.CharField(max_length=15)
 
     def __str__(self):
-        return f"{self.barber.name} - {self.service.name} - {self.date}"
+        return f"{self.barber.name} - {self.service.name} - {self.date} - {self.phone_number}"
