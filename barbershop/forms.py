@@ -35,3 +35,8 @@ class ApplicationForm(forms.ModelForm):
         elif date < datetime.date.today():
             raise ValidationError('Выберите дату позже сегодняшней.')
         return date
+
+
+class ReviewForm(forms.Form):
+    rating = forms.IntegerField(min_value=1, max_value=5)
+    comment = forms.CharField(widget=forms.Textarea)

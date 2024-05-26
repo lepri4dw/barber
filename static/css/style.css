@@ -23,3 +23,24 @@
 body {
     background-color: #ccc;
 }
+
+.anchor-offset {
+    position: relative;
+    top: -100px;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-click:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
